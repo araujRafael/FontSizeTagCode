@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "TagCode Font-Size",
+    "description": "Aumenta a fonte das tags <code>. Normalmente encontradas em sites de framework.",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "index.html"
+    }
+}
